@@ -1,6 +1,0 @@
-@FireFly_Dotnet_HostAddress = http://localhost:5195
-
-GET {{FireFly_Dotnet_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

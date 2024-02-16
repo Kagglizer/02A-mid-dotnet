@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Kagglizer-Dotnet.props" />
+</Project>
