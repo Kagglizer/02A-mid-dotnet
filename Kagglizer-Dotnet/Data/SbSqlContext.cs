@@ -40,7 +40,7 @@ public partial class SbSqlContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source = tcp:sb-sql-database-server.database.windows.net,1433; Initial Catalog = sb-sql; User Id = kagglizer-sa@sb-sql-database-server; Password = sbndeveloper!1");
+        => optionsBuilder.UseSqlServer("Data Source = tcp: x,1433; Initial Catalog = y; User Id = z; Password = a");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
