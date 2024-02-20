@@ -1,4 +1,4 @@
-using Kagglizer_Dotnet.Entities;
+using Kagglizer_Dotnet.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

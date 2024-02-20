@@ -1,0 +1,175 @@
+﻿@page
+@model Kagglizer_Dotnet.Pages.KagglizerDemo.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>StoryLine</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.StepNum)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.StepNum)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.NarrativeStep)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.NarrativeStep)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Media)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Media)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Question)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Question)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.QuestionTypeId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.QuestionTypeId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.GradeLevel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.GradeLevel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption3)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption3)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption4)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption4)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption5)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption5)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption6)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption6)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption7)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption7)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption8)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption8)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption9)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption9)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.Qoption10)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.Qoption10)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.CorrectAnswerOption)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.CorrectAnswerOption)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.IsStudentCorrect)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.IsStudentCorrect)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.NextStepIfCorrect)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.NextStepIfCorrect)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.NextStepIfWrong)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.NextStepIfWrong)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.StoryId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.StoryId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.StepCcssreference)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.StepCcssreference)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.CreatedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.CreatedDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.CreatedById)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.CreatedById)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.ModifiedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.ModifiedDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StoryLine.ModifiedById)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StoryLine.ModifiedById)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.StoryLine.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

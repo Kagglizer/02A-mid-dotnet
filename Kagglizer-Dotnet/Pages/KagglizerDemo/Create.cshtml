@@ -1,0 +1,149 @@
+﻿@page
+@model Kagglizer_Dotnet.Pages.KagglizerDemo.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>StoryLine</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="StoryLine.StepNum" class="control-label"></label>
+                <input asp-for="StoryLine.StepNum" class="form-control" />
+                <span asp-validation-for="StoryLine.StepNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.NarrativeStep" class="control-label"></label>
+                <input asp-for="StoryLine.NarrativeStep" class="form-control" />
+                <span asp-validation-for="StoryLine.NarrativeStep" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Media" class="control-label"></label>
+                <input asp-for="StoryLine.Media" class="form-control" />
+                <span asp-validation-for="StoryLine.Media" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Question" class="control-label"></label>
+                <input asp-for="StoryLine.Question" class="form-control" />
+                <span asp-validation-for="StoryLine.Question" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.QuestionTypeId" class="control-label"></label>
+                <input asp-for="StoryLine.QuestionTypeId" class="form-control" />
+                <span asp-validation-for="StoryLine.QuestionTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.GradeLevel" class="control-label"></label>
+                <input asp-for="StoryLine.GradeLevel" class="form-control" />
+                <span asp-validation-for="StoryLine.GradeLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption1" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption1" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption2" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption2" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption3" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption3" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption4" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption4" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption5" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption5" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption6" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption6" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption7" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption7" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption7" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption8" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption8" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption8" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption9" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption9" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption9" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.Qoption10" class="control-label"></label>
+                <input asp-for="StoryLine.Qoption10" class="form-control" />
+                <span asp-validation-for="StoryLine.Qoption10" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.CorrectAnswerOption" class="control-label"></label>
+                <input asp-for="StoryLine.CorrectAnswerOption" class="form-control" />
+                <span asp-validation-for="StoryLine.CorrectAnswerOption" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.IsStudentCorrect" class="control-label"></label>
+                <input asp-for="StoryLine.IsStudentCorrect" class="form-control" />
+                <span asp-validation-for="StoryLine.IsStudentCorrect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.NextStepIfCorrect" class="control-label"></label>
+                <input asp-for="StoryLine.NextStepIfCorrect" class="form-control" />
+                <span asp-validation-for="StoryLine.NextStepIfCorrect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.NextStepIfWrong" class="control-label"></label>
+                <input asp-for="StoryLine.NextStepIfWrong" class="form-control" />
+                <span asp-validation-for="StoryLine.NextStepIfWrong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.StoryId" class="control-label"></label>
+                <input asp-for="StoryLine.StoryId" class="form-control" />
+                <span asp-validation-for="StoryLine.StoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.StepCcssreference" class="control-label"></label>
+                <input asp-for="StoryLine.StepCcssreference" class="form-control" />
+                <span asp-validation-for="StoryLine.StepCcssreference" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.CreatedById" class="control-label"></label>
+                <input asp-for="StoryLine.CreatedById" class="form-control" />
+                <span asp-validation-for="StoryLine.CreatedById" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryLine.ModifiedById" class="control-label"></label>
+                <input asp-for="StoryLine.ModifiedById" class="form-control" />
+                <span asp-validation-for="StoryLine.ModifiedById" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

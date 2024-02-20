@@ -1,0 +1,186 @@
+﻿@page
+@model Kagglizer_Dotnet.Pages.KagglizerDemo.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].StepNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].NarrativeStep)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Media)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Question)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].QuestionTypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].GradeLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption8)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption9)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].Qoption10)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].CorrectAnswerOption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].IsStudentCorrect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].NextStepIfCorrect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].NextStepIfWrong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].StoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].StepCcssreference)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].CreatedById)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].ModifiedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoryLine[0].ModifiedById)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.StoryLine) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StepNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NarrativeStep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Media)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Question)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionTypeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GradeLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption7)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption8)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption9)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qoption10)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorrectAnswerOption)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsStudentCorrect)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NextStepIfCorrect)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NextStepIfWrong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoryId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StepCcssreference)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedById)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifiedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifiedById)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

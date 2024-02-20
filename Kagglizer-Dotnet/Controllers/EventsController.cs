@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Kagglizer_Dotnet.Entities;
+using Kagglizer_Dotnet.Data;
+using Kagglizer_Dotnet.Models;
 
 namespace Kagglizer_Dotnet.Controllers
 {
