@@ -14,7 +14,7 @@ namespace Kagglizer_Dotnet.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source = tcp:sb-sql-database-server.database.windows.net,1433; Initial Catalog = sb-sql; User Id = kagglizer-sa@sb-sql-database-server; Password = sbndeveloper!1",
+                optionsBuilder.UseSqlServer("Data Source = tcp:x",
                     options => options.EnableRetryOnFailure());
             }
         }
@@ -42,8 +42,7 @@ namespace Kagglizer_Dotnet.Data
 //        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 //        //{
 //        //    if (!optionsBuilder.IsConfigured)
-//        //    {
-//        //        optionsBuilder.UseSqlServer("Server=sb-sql-database-server.database.window.net;Database=sb-sql;User Id=kagglizer-sa;Password=sbndeveloper!1;TrustServerCertificate=True;");
+//        //    {x;");
 //        //    }
 //        //}
 
@@ -51,7 +50,7 @@ namespace Kagglizer_Dotnet.Data
 //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 //        {
 
-//            optionsBuilder.UseSqlServer("Data Source = tcp:sb - sql - database - server.database.windows.net,1433; Initial Catalog = sb - sql; User Id = kagglizer - sa@sb - sql - database - server; Password = sbndeveloper!1");
+//            optionsBuilder.UseSqlServer("Data Source = tcp:x,1433; Initial Catalog = yl; User Id = x; Password = z");
 //            //optionsBuilder.UseSqlServer("Server=sb-sql-database-server.database.window.net;Database=sb-sql;User Id=kagglizer-sa;Password=sbndeveloper!1;TrustServerCertificate=True;");
 //        }
 //        //Data Source = tcp:sb-sql-database-server.database.windows.net,1433;Initial Catalog = sb - sql; User Id = kagglizer - sa@sb-sql-database-server;Password=sbndeveloper!1
